@@ -14,8 +14,7 @@ on:
       - '**'
   ligthhouse: CHORME
    base:
-   #uri: https://googlechrome.github.io/lighthouse-ci/difftool/?baseReport=https://googlechrome.github.io/lighthouse-ci/packages/server/test/fixtures/lh-5-6-0-verge-a.json&compareReport=https://googlechrome.github.io/lighthouse-ci/packages/server/test/fixtures/lh-5-6-0-verge-b.json
-compare:
+   # see: https://googlechrome.github.io/lighthouse-ci/difftool/?baseReport=https://googlechrome.github.io/lighthouse-ci/packages/server/test/fixtures/lh-5-6-0-verge-a.json&compareReport=https://googlechrome.github.io/lighthouse-ci/packages/server/test/fixtures/lh-5-6-0-verge-b.json
 - '**'
 concurrency:
   group: ${{ github.event_name != 'pull_request' && github.run_id || github.ref }}
